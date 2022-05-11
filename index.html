@@ -56,7 +56,7 @@
         <!--Герои-->
         <section class="hero">
             <h1 class="hero-text">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button type="button" class="button-hero">Заказать услугу</button>
+            <button type="button" class="button-hero" data-modal-open>Заказать услугу</button>
         </section>
     </main>
 
@@ -75,9 +75,10 @@
                         </svg>
                     </div>
                     <h3 class="benefits-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-                    <p class="benefits-text">
+                     <p class="benefits-text">
                         Идейные соображения, а также начало повседневной работы по формированию позиции.
-                    </p>
+                     </p>
+                    
                 </li>
             
                 <li class="element">
@@ -129,13 +130,22 @@
 
         <ul class="work-list">
             <li class="foto">
-                <img class="image" src="img/box2.jpg" alt="photo box2" width="370" height="294">
+                <img class="image" src="img/box1.jpg" alt="photo box1" width="370" height="294">
+                <div class="foto-title">
+                    <h3 class="name-foto">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
+                </div>
             </li>
             <li class="foto">
-                <img class="image" src="img/box1.jpg" alt="photo box1" width="370" height="294">
+                <img class="image" src="img/box2.jpg" alt="photo box2" width="370" height="294">
+                <div class="foto-title">
+                    <h3 class="name-foto">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
+                </div>
             </li>
             <li class="foto">
                 <img class="image" src="img/box3.jpg" alt="photo box3" width="370" height="294">
+                <div class="foto-title">
+                    <h3 class="name-foto">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
+                </div>
             </li>
         </ul>
         </div>
@@ -458,6 +468,21 @@
         
     </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-btn" data-modal-close>
+                
+                    <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 4.108 13.892 3 9.5 7.392 5.108 3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608 13.892 14 15 12.892 10.608 8.5 15 4.108Z"
+                            fill="#000000" />
+                    </svg>
+                
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 
 </body>
 
