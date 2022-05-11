@@ -35,7 +35,7 @@ a {
     border-bottom: 1px solid #ECECEC;
     top: 0px;
     left: 0px;
-
+z-index: 9;
 }
 
 .header {
